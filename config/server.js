@@ -18,7 +18,7 @@ module.exports = {
 	ajaxBaseUrl: `http://cexerin.arunkumarpalaniappan.me:3001/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `http://192.168.43.159:3000`,
+	storeBaseUrl: `http://cexerin.arunkumarpalaniappan.me:3000`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
