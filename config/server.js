@@ -1,9 +1,9 @@
 // config used by server side only
-const dbHost = process.env.DB_HOST || '127.0.0.1';
-const dbPort = process.env.DB_PORT || 27017;
-const dbName = process.env.DB_NAME || 'shop';
-const dbUser = process.env.DB_USER || '';
-const dbPass = process.env.DB_PASS || '';
+const dbHost = process.env.DB_HOST || 'ds155653.mlab.com';
+const dbPort = process.env.DB_PORT || 55653;
+const dbName = process.env.DB_NAME || 'cexerin';
+const dbUser = process.env.DB_USER || 'cexerin';
+const dbPass = process.env.DB_PASS || 'Password-1';
 const dbCred =
 	dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 
@@ -12,13 +12,13 @@ const dbUrl =
 
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: `http://localhost:3001/api/v1`,
+	apiBaseUrl: `http://cexerin.arunkumarpalaniappan.me:3001/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `http://localhost:3001/ajax`,
+	ajaxBaseUrl: `http://cexerin.arunkumarpalaniappan.me:3001/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `http://localhost:3000`,
+	storeBaseUrl: `http://192.168.43.159:3000`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
